@@ -1,0 +1,21 @@
+{
+  "name": "map-helper",
+  "version": "1.0.0",
+  "description": "A library to use Array-like functionality with Javascript Maps",
+  "main": "dist/library.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Map",
+    "Array",
+    "Funtional"
+  ],
+  "author": "Joe Dragovich",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  }
+}
