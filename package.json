@@ -7,8 +7,8 @@
     "test": "test"
   },
   "repository": {
-    "type":"git",
-    "url":"https://github.com/JDragovich/map-helper.git"
+    "type": "git",
+    "url": "https://github.com/JDragovich/map-helper.git"
   },
   "keywords": [
     "Map",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2"
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }
