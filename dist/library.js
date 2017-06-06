@@ -19,9 +19,11 @@ function mapMap(map, callback) {
 
     try {
         for (var _iterator = map.entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            entry = _step.value;
+            var entry = _step.value;
 
             newMapStart.push(callback.apply(undefined, _toConsumableArray(entry).concat([count])));
+
+            count++;
         }
     } catch (err) {
         _didIteratorError = true;
@@ -54,9 +56,11 @@ function reduceMap(map, callback, initial) {
 
     try {
         for (var _iterator2 = map.entries()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            entry = _step2.value;
+            var entry = _step2.value;
 
             current = callback.apply(undefined, [inital].concat(_toConsumableArray(entry), [count]));
+
+            count++;
         }
     } catch (err) {
         _didIteratorError2 = true;

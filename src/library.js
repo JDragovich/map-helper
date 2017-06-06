@@ -5,8 +5,10 @@ function mapMap(map,callback){
     let newMapStart = [];
     let count = 0;
 
-    for(entry of map.entries()){
+    for(let entry of map.entries()){
         newMapStart.push(callback(...entry,count));
+
+        count++;
     }
 
     return new Map(newMapStart);
@@ -19,8 +21,10 @@ function reduceMap(map,callback,initial){
     let current = initial;
     let count = 0;
 
-    for(entry of map.entries()){
+    for(let entry of map.entries()){
         current = callback(inital,...entry,count);
+
+        count++;
     }
 
     return current;
