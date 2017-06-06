@@ -1,10 +1,14 @@
 {
   "name": "map-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A library to use Array-like functionality with Javascript Maps",
   "main": "dist/library.js",
   "scripts": {
     "test": "test"
+  },
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/JDragovich/map-helper.git"
   },
   "keywords": [
     "Map",
