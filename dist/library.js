@@ -58,7 +58,7 @@ function reduceMap(map, callback, initial) {
         for (var _iterator2 = map.entries()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
             var entry = _step2.value;
 
-            current = callback.apply(undefined, [inital].concat(_toConsumableArray(entry), [count]));
+            current = callback.apply(undefined, [current].concat(_toConsumableArray(entry), [count]));
 
             count++;
         }
