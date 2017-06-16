@@ -22,7 +22,7 @@ function reduceMap(map,callback,initial){
     let count = 0;
 
     for(let entry of map.entries()){
-        current = callback(inital,...entry,count);
+        current = callback(current,...entry,count);
 
         count++;
     }
