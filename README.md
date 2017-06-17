@@ -58,7 +58,7 @@ let foo = new Map([
     ["gubbins",2]
 ]);
 
-this.baz = mapHelper.reduceMap(this.foo, (current, key, value, index) => current + value , 0);
+let baz = mapHelper.reduceMap(foo, (current, key, value, index) => current + value , 0);
 
 // result: 3
 ```
