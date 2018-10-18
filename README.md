@@ -10,7 +10,7 @@ install via npm
 npm install --save map-helper
 ```
 
-then in your application
+Then in your application
 
 ```javascript
 import * as mapHelper from 'map-helper';
@@ -19,7 +19,7 @@ import * as mapHelper from 'map-helper';
 ## Methods
 
 ### mapMap
-takes and a Map and provides a new Map after applying a callback.
+Takes and a Map and provides a new Map after applying a callback.
 
 **mapHelper.mapMap(map,callback)**
 
@@ -115,7 +115,7 @@ let mergedWithCallback = mapHelper.mergeMaps([foo, anotherMap], (key, oldVal, ne
 ```
 
 ### invertMap
-Inverts the keys and values of a map, aggregating values with key collisions as default behaviour. accepts an options callback to handle key collisions.
+Inverts the keys and values of a map, aggregating values with key collisions as default behaviour. Accepts an options callback to handle key collisions.
 
 **mapHelper.invertMap(map,callback)**
 
@@ -144,7 +144,7 @@ let invertedMap = mapHelper.invertMap(anotherMap);
 ```
 
 ### mapFromObject
-converts a plain object to a map, using only own properties.
+Converts a plain object to a map, using only own properties.
 
 **mapHelper.mapFromObject(object)**
 
